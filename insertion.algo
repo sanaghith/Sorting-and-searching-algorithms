@@ -1,0 +1,17 @@
+ALGORITHM insertion_sort
+VAR
+tab: ARRAY_OF INTEGER[10];
+i,j:=INTEGER
+BEGIN
+FOR i FROM 0 TO tab.length-1 STEP step 1 DO
+j=1
+WHILE (j>0) DO
+IF (tab[j]<tab[j-1]) THEN
+temp:=tab[i]
+tab[j]:=tab[j-1]
+tab[j-1]:=temp
+END_IF
+j--
+END_WHILE
+END_FOR
+END
